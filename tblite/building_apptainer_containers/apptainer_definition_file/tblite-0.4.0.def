@@ -1,0 +1,60 @@
+Bootstrap: docker
+From: ubuntu:24.04
+
+%arguments
+    conda_base=/opt/conda
+    conda_installer=Miniforge3-Linux-x86_64.sh
+    tblite_version=0.4.0
+
+%environment
+export PATH="{{ conda_base }}/bin:$PATH"
+
+%post
+echo "--- Updating and upgrading Ubuntu ---"
+apt-get update && apt-get upgrade -y
+
+echo "--- Installing wget ---"
+apt-get install -y wget
+
+echo "--- Downloading the Miniforge3 installer ---"
+wget https://github.com/conda-forge/miniforge/releases/latest/download/{{ conda_installer }}
+
+echo "--- Installing Miniforge3 ---"
+bash {{ conda_installer }} -b -p {{ conda_base }}
+
+echo "--- Removing the installer ---"
+rm {{ conda_installer }}
+
+echo "--- Making sure the conda executable is in the \$PATH ---"
+export PATH="{{ conda_base }}/bin:$PATH"
+
+echo "--- Creating tblite environment and install tblite-python package ---"
+conda create -n tblite -c conda-forge tblite-python={{ tblite_version }} -y
+
+echo "--- Cleaning up the Conda cache to minimize container size ---"
+conda clean --all -y
+
+echo "--- Cleaning up apt cache and unnecessary packages ---"
+apt-get clean
+rm -rf /var/lib/apt/lists/*
+
+%runscript
+#!/bin/bash
+source {{ conda_base }}/etc/profile.d/conda.sh
+conda activate tblite
+exec "$@"
+
+# optional help section
+%help
+This container holds a minimal conda environment with 'tblite-python', installed on an Ubuntu 24.04 base.
+Usage:
+$ apptainer run <image> tblite --version
+$ apptainer run <image> python -c 'import tblite'
+
+# optional test section
+%test
+echo "Looking for tblite executable ..."
+( /.singularity.d/runscript tblite --version | grep -q "tblite version" ) && echo "Success!" || { echo "Fail"; exit 1; }
+echo "Looking for tblite Python package ..."
+( /.singularity.d/runscript python -c "import tblite" ) && echo "Success!" || { echo "Fail"; exit 1; }
+
