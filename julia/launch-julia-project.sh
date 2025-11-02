@@ -8,8 +8,8 @@ mkdir -p $VSC_DATA/JuliaProjects
 rm -rf $VSC_DATA/JuliaProject/MyProject/
 mkdir -p $VSC_DATA/JuliaProject/MyProject
 
-# 4. Activate Project and add TightBindingToolkit
+# 3. Activate Project and add TightBindingToolkit
 julia -e 'using Pkg; Pkg.activate("MyProject"); Pkg.add("TightBindingToolkit")'
 
-# 5. Use Project
+# 4. Use Project
 julia
