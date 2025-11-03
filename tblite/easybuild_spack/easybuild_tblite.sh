@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PREFIX=$VSC_DATA/gssi/easybuild
-source $PREFIX/venv/activate
+source $PREFIX/venv/bin/activate
 
 export EASYBUILD_PREFIX=$VSC_DATA/easybuild
 export EASYBUILD_BUILDPATH=/tmp/$USER/easybuild/build
