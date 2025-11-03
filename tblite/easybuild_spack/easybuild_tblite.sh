@@ -3,7 +3,7 @@
 PREFIX=$VSC_DATA/gssi/easybuild
 source $PREFIX/venv/bin/activate
 
-export EASYBUILD_PREFIX=$VSC_DATA/easybuild
+export EASYBUILD_PREFIX=$VSC_DATA/easybuild/$VSC_OS_LOCAL/$VSC_ARCH_LOCAL
 export EASYBUILD_BUILDPATH=/tmp/$USER/easybuild/build
 
 # show current configuration
