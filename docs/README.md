@@ -4,6 +4,8 @@ The Getting Scientific Software Installed training (or GSSI in short) is
 jointly organised by the HPC support teams of the institutions that are part
 of the [Vlaams Supercomputer Centrum](https://www.vscentrum.be/).
 
+For more information, see https://vscentrum.github.io/gssi-training .
+
 ## Description
 
 Getting the software that is required to run your scientific workloads
@@ -24,8 +26,7 @@ get started with installing scientific software on a supercomputer.
 - Basic knowledge of how to work on the VSC clusters (logging in, submitting
   jobs, file management) is a prerequisite.
 - To get a taste for what is offered in the GSSI training, have a look at the
-  slides and recordings from 2025 at https://github.com/vscentrum/gssi-training#gssi-training
-  TODO Move that content somewhere else and update link
+  slides and recordings from 2025 at https://vscentrum.github.io/gssi-training/2025
 - To prepare for the session, it can be useful to already go through the
   [Scientific Software](https://docs.vscentrum.be/compute/software/index.html)
   section on the VSC Documentation pages.
@@ -36,7 +37,7 @@ get started with installing scientific software on a supercomputer.
 
 ## Practical details
 
-The 2026 GSSI session takes place on **Wed 14 Oct 2026 between 09:00TODO and 17:00TODO**.
+The 2026 GSSI session takes place on **Wed 14 Oct 2026 between 09:00 and 17:00**.
 The venue address is:
 
 Belpaire - 03.Z.02 (3rd floor)<br>
@@ -45,7 +46,7 @@ Simon Bolivarlaan 17<br>
 1000 Brussel
 
 Both in-person and virtual (via Microsoft Teams) attendance are possible and
-free of charge, but registration via [TODO](TODO) is mandatory! Lunch and coffee
+free of charge, but **[registration is mandatory](https://event.ugent.be/registration/gssi2025)**! Lunch and coffee
 breaks are provided for people attending on site.
 
 ## Schedule
@@ -56,32 +57,35 @@ breaks are provided for people attending on site.
   - EESSI
   - Using container images
   - Conda + mamba + pixi
-  - Python + pip + venv (+ uv?)
+  - Python + pip + venv + uv
   - R + Julia + Rust + Java
 - [11:00] Coffee break
 - [11:30] Presentations: overview of tools part II
-  - Manually building and installing
+  - Manually building and installing software
   - Building container images
   - EasyBuild + Spack
-  - Patch files?
-  - Decision tree/conclusions
+  - When should I use which tool?
+  - Conclusions
 - [12:30] Lunch
-- [13:30] Hands-on part I: exercises
+- [13:30] Hands-on
 - [15:00] Coffee break
-- [15:30] Hands-on part II
-  - One-on-one support based on cases from users
-  - Discussion of exercises
-- [16:30] The end
+- [15:30] Hands-on (continued)
+- [17:00] The end
+
+During the hands-on sessions, we will work with a "choose your own adventure" approach.
+Exercises will be provided for each of the tools, which you can use to make yourself familiar with their workflow.
+You can also focus on figuring out which tool(s) are most appropriate for the software you are interested in.
+VSC support staff will be around to answer questions and provide hands-on help to attendees.
 
 ## Contact
 
 This training is organised by the [Vlaams Supercomputer Centrum (VSC)](https://www.vscentrum.be/).
 If you have any questions related to this training session, please contact
-compute@vscentrum.be?TODO.
+[support@vscentrum.be](mailto:support@vscentrum.be).
 
 The speakers and organisers of this session are:
 
-- Kenneth Hoste & Lara Peeters (HPC support team, Ghent University)
-- Alex Domingo & Sam Moors (HPC support team, Vrije Universiteit Brussel)
-- Steven Vandenbrande & Maxime Van den Bossche (HPC support team, KU Leuven)
+- Kenneth Hoste, Lara Peeters (HPC support team, Ghent University)
+- Alex Domingo, Sam Moors, Cintia Willemyns (HPC support team, Vrije Universiteit Brussel)
+- Steven Vandenbrande, Maxime Van den Bossche (HPC support team, KU Leuven)
 - Robin Verschoren (HPC support team, University of Antwerp)
