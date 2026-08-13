@@ -1,10 +1,10 @@
-# GSSI26
+# Getting Scientific Software Installed - 2026
 
 The Getting Scientific Software Installed training (or GSSI in short) is
 jointly organised by the HPC support teams of the institutions that are part
 of the [Vlaams Supercomputer Centrum](https://www.vscentrum.be/).
 
-For more information, see https://vscentrum.github.io/gssi-training .
+For more information, see [the documentation pages](https://vscentrum.github.io/gssi-training).
 
 ## Description
 
@@ -26,7 +26,8 @@ get started with installing scientific software on a supercomputer.
 - Basic knowledge of how to work on the VSC clusters (logging in, submitting
   jobs, file management) is a prerequisite.
 - To get a taste for what is offered in the GSSI training, have a look at the
-  slides and recordings from 2025 at https://vscentrum.github.io/gssi-training/2025
+  slides and recordings from 2025 at
+  [https://vscentrum.github.io/gssi-training/2025](https://vscentrum.github.io/gssi-training/2025)
 - To prepare for the session, it can be useful to already go through the
   [Scientific Software](https://docs.vscentrum.be/compute/software/index.html)
   section on the VSC Documentation pages.
@@ -45,9 +46,12 @@ Marie-Elisabeth Belpaire building (close to Brussels-North train station)<br>
 Simon Bolivarlaan 17<br>
 1000 Brussel
 
-Both in-person and virtual (via Microsoft Teams) attendance are possible and
-free of charge, but **[registration is mandatory](https://event.ugent.be/registration/gssi2025)**! Lunch and coffee
-breaks are provided for people attending on site.
+It is highly recommended to attend this event in-person. The session before
+noon can also be joined online (via Microsoft Teams), but the afternoon
+hands-on session (see the [schedule](#schedule) below) can *only* be followed
+on site. In both cases, attendance is free of charge, but
+**registration via [this form](https://event.ugent.be/registration/gssi2026)
+is mandatory**! Lunch and coffee breaks are provided for people attending on site.
 
 ## Schedule
 
@@ -89,3 +93,10 @@ The speakers and organisers of this session are:
 - Alex Domingo, Sam Moors, Cintia Willemyns (HPC support team, Vrije Universiteit Brussel)
 - Steven Vandenbrande, Maxime Van den Bossche (HPC support team, KU Leuven)
 - Robin Verschoren (HPC support team, University of Antwerp)
+
+## Previous runs
+
+Slides and video recordings from previous runs of this training sessions are
+available:
+
+- 2025: [click](https://vscentrum.github.io/gssi-training/2025)
