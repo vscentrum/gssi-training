@@ -77,9 +77,19 @@ is mandatory**! Lunch and coffee breaks are provided for people attending on sit
 - [17:00] The end
 
 During the hands-on sessions, we will work with a "choose your own adventure" approach.
-Exercises will be provided for each of the tools, which you can use to make yourself familiar with their workflow.
+[Exercises](#exercises) will be provided for each of the tools, which you can use to make yourself familiar with their workflow.
 You can also focus on figuring out which tool(s) are most appropriate for the software you are interested in.
 VSC support staff will be around to answer questions and provide hands-on help to attendees.
+
+## Exercises
+
+The following links provide instructions for the exercises related to each tool
+discussed in the training:
+
+- [Python + pip + venv + uv](exercises/python)
+
+You can also access the exercise material directly in the GitHub repository at
+[https://github.com/vscentrum/gssi-training/tree/main/exercises/](https://github.com/vscentrum/gssi-training/tree/main/exercises/).
 
 ## Contact
 
