@@ -88,6 +88,7 @@ discussed in the training:
 
 - [Python + pip + venv + uv](exercises/python)
 - [Installing R packages](exercises/r)
+- [Installing Julia packages](exercises/julia)
 
 You can also access the exercise material directly in the GitHub repository at
 [https://github.com/vscentrum/gssi-training/tree/main/exercises/](https://github.com/vscentrum/gssi-training/tree/main/exercises/).
