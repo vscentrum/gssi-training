@@ -87,6 +87,7 @@ The following links provide instructions for the exercises related to each tool
 discussed in the training:
 
 - [Python + pip + venv + uv](exercises/python)
+- [Conda / Mamba / Pixi](exercises/conda_mamba_pixi)
 
 You can also access the exercise material directly in the GitHub repository at
 [https://github.com/vscentrum/gssi-training/tree/main/exercises/](https://github.com/vscentrum/gssi-training/tree/main/exercises/).
