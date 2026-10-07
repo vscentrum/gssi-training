@@ -1,11 +1,15 @@
+# connect to a docker registry (default = Docker Hub)
 Bootstrap: docker
+# download ubuntu-24.04 image
 From: ubuntu:24.04
 
+# %arguments set variables that can be (re)used in the definition file with {{ }}
 %arguments
     conda_base=/opt/conda
     conda_installer=Miniforge3-Linux-x86_64.sh
     tblite_version=0.4.0
 
+# %environment writes into /.singularity.d/env/90-environment.sh
 %environment
 export PATH="{{ conda_base }}/bin:$PATH"
 
@@ -38,19 +42,22 @@ echo "--- Cleaning up apt cache and unnecessary packages ---"
 apt-get clean
 rm -rf /var/lib/apt/lists/*
 
+# %runscript writes into /.singularity.d/runscript
 %runscript
 #!/bin/bash
 source {{ conda_base }}/etc/profile.d/conda.sh
 conda activate tblite
 exec "$@"
 
-%help # optional help section
+# optional help section, to be used with `apptainer run-help <image>`
+%help
 This container holds a minimal conda environment with 'tblite-python', installed on an Ubuntu 24.04 base.
 Usage:
 $ apptainer run <image> tblite --version
 $ apptainer run <image> python -c 'import tblite'
 
-%test # optional test section
+# optional test section, to be used with `apptainer test <image>`
+%test
 echo "Looking for tblite executable ..."
 ( /.singularity.d/runscript tblite --version | grep -q "tblite version" ) && echo "Success!" || { echo "Fail"; exit 1; }
 echo "Looking for tblite Python package ..."
