@@ -81,6 +81,10 @@ During the hands-on sessions, we will work with a "choose your own adventure" ap
 You can also focus on figuring out which tool(s) are most appropriate for the software you are interested in.
 VSC support staff will be around to answer questions and provide hands-on help to attendees.
 
+## Slides
+
+The slides of the presentations can be found [here](slides-20261014.pdf).
+
 ## Exercises
 
 The following links provide instructions for the exercises related to each tool
